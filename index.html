@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <style>
+        .etoiles {
+            font-size: 30px;
+            color: gray;
+            cursor: pointer;
+        }
+        .etoiles.active {
+            color: gold;
+        }
+        .container {
+            margin: 20px;
+        }
+        .evaluation-container {
+            margin-bottom: 40px;
+            margin-top: 50px;
+        }
+        .compte {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--------------HEADER-------------------------------->
+    <header>
+        <ul class="header_logo">
+            <li><a href="projet.html">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <!--------------HEADER-------------------------------->
+
+    <!-------------------------------------------------------->
+    <section class="home">
+        <div class="home_left">
+            <h1 class="title">LIVE YU PENG Sébastien</h1>
+            <p class="popo">Bienvenue sur mon Portfolio</p>
+            <p>
+                Hello! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="20px" height="20px" alt="Hello" /> 
+                Je suis Live Yu Peng Sébastien 🌱 j'apprends actuellement Python, React et Javascript. J'ai une passion pour créer des pages web, ce qui m'a poussé à apprendre le codage avec les différentes langues de programmation. Découvrez mes travaux dans la section "Projets".
+            </p>
+        
+        </div>
+        <div class="home_right">
+            <img src="img/jobs-with-diploma-web-designer-700x400.png" alt="Image temporaire">
+        </div>
+    </section>
+
+    <!---------------Outils-------------------------------->
+    <section class="outils">
+        <h1 class="title">Outils utilisés</h1>
+        <div class="tools">
+            <div class="div1">
+                <img src="img/python (1).png" alt="Icône Python">
+            </div>
+            <div class="div2">
+                <img src="img/html.png" alt="Image temporaire">
+            </div>
+            <div class="div3">
+                <span>Visual Studio Code</span>
+            </div>
+            <div class="div4">
+                <span>HTML</span>
+            </div>
+            <div class="div5">
+                <span>Python</span>
+            </div>
+            <div class="div6">
+                <img src="img/css-3 (1).png" alt="Image temporaire">
+            </div>
+            <div class="div7">
+                <span>CSS</span>
+            </div>
+        </div>
+    </section>
+    <!---------------Outils-------------------------------->
+
+    <!---------------Évaluation des Compétences---------------->
+    <section class="evaluation">
+        <h1 class="title1"> Mes compétences</h1>
+
+        <div class="evaluation-container">
+            <div class="compte">
+                <h3>HTML</h3>
+                <div class="etoiles-container" id="html-etoiles">
+                    <span class="etoiles" data-value="1">&#9733;</span>
+                    <span class="etoiles" data-value="2">&#9733;</span>
+                    <span class="etoiles" data-value="3">&#9733;</span>
+                    <span class="etoiles" data-value="4">&#9733;</span>
+                    <span class="etoiles" data-value="5">&#9733;</span>
+                </div>
+                <p>Note: <span id="html-rating-value">3</span> étoiles</p>
+            </div>
+
+            <div class="compte">
+                <h3>CSS</h3>
+                <div class="etoiles-container" id="css-etoiles">
+                    <span class="etoiles" data-value="1">&#9733;</span>
+                    <span class="etoiles" data-value="2">&#9733;</span>
+                    <span class="etoiles" data-value="3">&#9733;</span>
+                    <span class="etoiles" data-value="4">&#9733;</span>
+                    <span class="etoiles" data-value="5">&#9733;</span>
+                </div>
+                <p>Note: <span id="css-rating-value">3</span> étoiles</p>
+            </div>
+
+            <div class="compte">
+                <h3>Python</h3>
+                <div class="etoiles-container" id="python-etoiles">
+                    <span class="etoiles" data-value="1">&#9733;</span>
+                    <span class="etoiles" data-value="2">&#9733;</span>
+                    <span class="etoiles" data-value="3">&#9733;</span>
+                    <span class="etoiles" data-value="4">&#9733;</span>
+                    <span class="etoiles" data-value="5">&#9733;</span>
+                </div>
+                <p>Note: <span id="python-rating-value">3</span> étoiles</p>
+            </div>
+        </div>
+    </section>
+    <!---------------Évaluation des Compétences---------------->
+
+    <script>
+        function setupRating(etoilesId, ratingValueId, rating) {
+            const etoiles = document.querySelectorAll(`#${etoilesId} .etoiles`);
+            const ratingValue = document.getElementById(ratingValueId);
+
+            // Définir la note initiale
+            ratingValue.textContent = rating;
+
+            // Marquer les étoiles comme actives en fonction de la note
+            etoiles.forEach(etoile => {
+                const value = parseInt(etoile.getAttribute('data-value'));
+                if (value <= rating) {
+                    etoile.classList.add('active');
+                }
+            });
+        }
+
+        // Initialisation des évaluations avec les notes prédéfinies
+        setupRating('html-etoiles', 'html-rating-value', 4); // Note 3 pour HTML
+        setupRating('css-etoiles', 'css-rating-value', 3); // Note 4 pour CSS
+        setupRating('python-etoiles', 'python-rating-value', 3); // Note 5 pour Python
+    </script>
+</body>
+</html>
