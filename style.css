@@ -6,6 +6,11 @@
 body{
     background-color: rgb(16, 16, 15);
 }
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+}
 .header_logo a{
     text-decoration: 0;
    color: rgb(246, 239, 239);
@@ -102,21 +107,23 @@ body{
         height: 100%;
         object-fit: contain;
     }
-
+    @media (min-width: 768px) {
+        .home_left, .home_right {
+            flex: 1 1 50%; 
+            text-align: left;
+        }
+    }
 
     .outils{
         padding: 20px 8%;
     }
-    .tools{
-        margin-top: 45px;
+    .tools {
         display: grid;
-        grid-template-columns: repeat(7,1fr);
-        grid-template-rows: repeat(6,1fr);
-        grid-column-gap:10px ;
-        grid-row-gap: 10px ;
-        height: 80vh;
-        
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* S'adapte automatiquement */
+        gap: 20px;
+        text-align: center;
     }
+    
     .div1{
         grid-area: 1 / 1 / 6 /3;
     }
