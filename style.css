@@ -149,13 +149,15 @@ body{
         height: 100%;
         object-fit: contain;
         filter: grayscale(100%);
-        transition: 0.5s ease-out;
+        transition:  0.5s ease-out;
+     
     }
 .fox{
     height: 50px;
 }
     .outils div img:hover{
         filter: grayscale(0);
+        
     }
     .tools span{
         color: #faf7f7;
@@ -194,6 +196,7 @@ body{
     .img-section{
         padding: 20px 8%;
         width: 100%;
+        
     }
     .img-section_content{
         width: 100%;
@@ -203,6 +206,7 @@ body{
         flex-direction: column;
         padding: 20px;
         box-shadow: 0 0 8px rgb(251, 248, 248);
+        
     }
     .img-section h1{
         text-align: right;
@@ -212,9 +216,11 @@ body{
         width:100% ;
         transition:0.5s ;
         filter: grayscale(100);
+        
     }
     .img-section img:hover{
         filter: grayscale(0);
+        
     }
     .img-section_content p{
         text-align: center;
