@@ -58,7 +58,7 @@ body{
            transition: 0.5s;
        }
        .header_logo a:last-child:hover{
-           background-color: #bdcafb;
+           background-color: #2f3030;
            color: aliceblue;
        }
        .title{
@@ -93,8 +93,7 @@ body{
         transform-style: preserve-3d;
         position: relative;
     }
-    
-
+   
 /* Outils */
 
     .home {
