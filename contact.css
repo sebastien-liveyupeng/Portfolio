@@ -7,32 +7,53 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: black;
-
+    background: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-   
-    
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
 }
-button a{
+
+button {
+    background-color: var(--highlight-color);
+    padding: 10px 20px;
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #a7ccf1;
+}
+
+button a {
     text-decoration: none;
-    color: #090909;
+    color: inherit;
 }
+
+button:hover {
+    background-color: #ff4500;
+}
+
 .contact-form {
     background-color: #a7ccf1;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
 }
 
 .contact-form h2 {
-    margin-bottom: 20px;
-    color: #161212;
+    color: #333;
     text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .contact-form label {
@@ -42,13 +63,37 @@ button a{
     color: #555;
 }
 
+.contact-form input[type="email"],
 .contact-form input[type="text"],
-.contact-form select {
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #029bdc;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #0177bb;
+}
+
+button[type="button"] {
+    background-color: #f39c12;
+}
+
+button[type="button"]:hover {
+    background-color: #e67e22;
 }
 
 .privacy-policy {
@@ -61,18 +106,3 @@ button a{
     margin-right: 10px;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #029bdc;
-    color: white;
-    font-size: 1em;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
