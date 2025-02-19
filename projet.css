@@ -99,3 +99,26 @@ a {
 a:hover {
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+    .header_logo {
+        font-size: 28px;
+    }
+
+    .project-container {
+        padding: 10px;
+    }
+
+    .project {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button {
+        width: 90%;
+        text-align: center;
+    }
+
+    .Description {
+        font-size: 14px;
+    }
+}

@@ -10,7 +10,7 @@
     --font-size: 1.2em;
 }
 
-/* 2. Reset global */
+
 * {
     margin: 0;
     padding: 0;
@@ -25,13 +25,14 @@ body {
     line-height: 1.6;
 }
 
-/* 4. Header Styling */
+
+
 .header_logo {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 8%;
-    padding: 20px 0;
+    flex-wrap: wrap;
+    padding: 15px 8%;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -39,23 +40,41 @@ body {
     text-decoration: none;
     color: var(--primary-text-color);
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    margin-left: 20px;
-    padding-bottom: 3px;
+    margin-left: 15px;
     position: relative;
 }
 
-.header_logo a:after {
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    height: 1px;
-    width: 0%;
-    content: "";
-    background-color: var(--highlight-color);
-    transition: 0.5s ease-out;
+
+
+
+@media screen and (max-width: 768px) {
+    .header_logo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header_logo a {
+        margin: 10px 0;
+    }
+
+
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }
+
 
 .header_logo a:hover:after {
     width: 100%;
