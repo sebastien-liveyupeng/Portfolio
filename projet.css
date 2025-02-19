@@ -122,3 +122,12 @@ a:hover {
         font-size: 14px;
     }
 }
+@media (max-width: 768px) {
+    button {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto;
+        text-align: center;
+    }
+}
