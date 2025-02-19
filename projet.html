@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="projet.css">
+    <link rel="stylesheet" href="menu.css">
     <title>Projets</title>
 </head>
 
@@ -14,62 +15,75 @@
         <h1 class="header_logo">LISTE DES PROJETS</h1>
     </header>
 
-    <section class="project-container">
-        <section class="project">
-            <h2>Fan site</h2>
-            <div><img src="img/imaginedragon.png" alt="Fansite"></div>
-            <u><p class="popo">Description brève du projet :</p></u>
-            <div class="Description">
-                <p>Ce projet se porte sur le groupe de musique Imagine Dragons, contenant les différents onglets suivants : "biographie", "réseaux", "contact" et etc.
-                    Ce fan site est fait en HTML et CSS dont vous pourrez voir le code source sur mon Github => <a href="https://github.com/sebastien-liveyupeng/deployfansite">Source code</a>.
-                    Vous pouvez avoir le lien du site ici aussi => <a href="https://fansiteimaginedragons.vercel.app/">FanSite</a></p>
-            </div>
-        </section>
+    <div class="container">
 
-        <section class="project">
-            <h2>TIC TAC TOE</h2>
-            <div><img src="img/TICTAC.png" alt="TICTACTOE"></div>
-            <p class="popo">Description brève du projet :</p>
-            <div class="Description">
-                <p>Ce projet consiste à créer le fameux jeu TIC TAC TOE. J'ai utilisé Python, HTML/CSS afin de mener ce projet à bien. Vous pourrez aussi voir le code source sur mon Github avec le lien qui suit => <a href="https://github.com/sebastien-liveyupeng/tictac">Source code</a></p>
-            </div>
-        </section>
 
-        <section class="project">
-            <h2>Bloom Petals</h2>
-            <div><img src="img/Bloom.png" alt="Bloom"></div>
-            <p class="popo">Description brève du projet :</p>
-            <div class="Description">
-                <p>Ce site se tient sur une compagnie de design floral, avec divers onglets tels que "contact", "les membres de l'équipe", "les différents projets réalisés", et etc. <a href="https://github.com/sebastien-liveyupeng/bloom-petals">Source code</a></p>
-            </div>
-        </section>
 
-        <section class="project">
-            <h2>Site Marseille</h2>
-            <div><img src="img/Capture d'écran 2024-12-02 162559.png" alt="Marseille"></div>
-            <p class="popo">Description brève du projet : (En cours de développement)</p>
-            <div class="Description">
-                <p>Ce projet consiste à créer un site sur les meilleurs spots de Marseille. J'ai utilisé Javascript, HTML/CSS afin de mener ce projet à bien. Vous pourrez aussi voir le code source sur mon Github avec le lien qui suit => <a href="https://github.com/sebastien-liveyupeng/Marseille">Source code</a></p>
-            </div>
-        </section>
+        <div class="slide">
 
-        <section class="project">
-            <h2>MashaTea</h2>
-            <div><img src="img/Capture d'écran 2025-01-13 105955.png" alt="MashaTea"></div>
-            <p class="popo">Description brève du projet :</p>
-            <div class="Description">
-                <p>Un site pour la vente de Thé Matcha. Vous pourrez aussi voir le code source sur Github avec le lien qui suit => <a href="https://github.com/florian-arnaud/Matcha-Tea">Source code</a></p>
+            <div class="item" style="background-image: url(img/imaginedragon.png);">
+                <div class="content">
+                    <div class="name"> Imagin Dragons</div>
+                    <div class="des">Ce projet se porte sur le groupe de musique Imagine Dragons, contenant les différents onglets suivants : "biographie", "réseaux", "contact" et etc. Ce fan site est fait en HTML et CSS dont vous pourrez voir le code source sur mon Github </div>
+                    <button ><a href="https://github.com/sebastien-liveyupeng/fansite">Source code</a></button>      
+                </div>
             </div>
-        </section>
+            <div class="item" style="background-image: url(img/macha.png);">
+                <div class="content">
+                    <div class="name" style="color: black;">Macha Tea</div>
+                    <div class="des">Un site pour la vente de Thé Matcha. Vous pourrez aussi voir le code source sur Github</div>
+                    <button ><a href="https://github.com/sebastien-liveyupeng/fansite">Source code</a></button>           
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/TICTAC.png);">
+                <div class="content">
+                    <div class="name">Tic Tac Toe</div>
+                    <div class="des">Ce projet consiste à créer le fameux jeu TIC TAC TOE. J'ai utilisé Python, HTML/CSS afin de mener ce projet à bien. Vous pourrez aussi voir le code source sur mon Github</div>
+                    <button ><a href="https://github.com/sebastien-liveyupeng/fansite">Source code</a></button>      
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/Bloom.png);">
+                <div class="content">
+                    <div class="name">Bloom Petals</div>
+                    <div class="des">Ce site se tient sur une compagnie de design floral, avec divers onglets tels que "contact", "les membres de l'équipe", "les différents projets réalisés", et etc.</div>
+                    <button ><a href="https://github.com/sebastien-liveyupeng/bloom-petals">Source code</a></button>         
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/quiznight.png);">
+                <div class="content">
+                    <div class="name">Quiz Night</div>
+                    <div class="des">C'est site , dans lequel l'utilisateur peut créer des catégories de Quiz donc le CRUD , réalisé en HtML/CSS et PHP  </div>
+                    <button ><a href="https://github.com/esteban-genty/quiznight">Source code</a></button>          
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/Gestionnairedemenu.png);">
+                <div class="content">
+                    <div class="name">Gestionnaire de menu</div>
+                    <div class="des"> Un site réalisé en HTML/CSS et PHP , l'utilisateur peut ajouter ses différents types de plats les supprimer et modifier</div>
+                    <button ><a href="https://github.com/esteban-genty/gestionnaire-de-menu">Source code</a></button>        
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/livre-or.png);">
+                <div class="content">
+                    <div class="name" style="color: black;">Livre d'or</div>
+                    <div class="des"> Un site réalisé en HTML/CSS et PHP , l'utilisateur peut commenter mais seulement s'il est connecté et aussi modifier ses infos .</div>
+                    <button ><a href="">Source code</a></button>        
+                </div>
+            </div>
 
-        <section class="project">
-            <h2>CarteO</h2>
-            <div><img src="img/Carteo.png" alt="CarteO"></div>
-            <p class="popo">Description brève du projet :</p>
-            <div class="Description">
-                <p>Un site pour les recettes culinaires , ce site a été codé avec du php , vous pourrez voir cela en cliquant sur le lien suivant => <a href="https://github.com/esteban-genty/gestionnaire-de-menu">Source code</a></p>
-            </div>
-        </section>
+
+        </div>
+
+       <div class="button">
+         <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+         <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+       </div>
+
+ 
+    </div>
+
+
+    <script src="menu.js"></script>
     </section>
 </body>
 </html>

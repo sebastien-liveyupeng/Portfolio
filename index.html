@@ -169,62 +169,29 @@
     
     <!---------------Outils-------------------------------->
 
+
     <!---------------Évaluation des Compétences---------------->
-    <section class="evaluation">
-        <h1 class="title1"> Mes compétences</h1>
-
-        <div class="evaluation-container">
-            <div class="compte">
-                <h3>HTML</h3>
-               
-            </div>
-
-            <div class="compte">
-                <h3>CSS</h3>
-             
-            </div>
-
-            <div class="compte">
-                <h3>Python</h3>
-              
+    
+    <div class="container">
+        <div class="box">
+            <h2>HTML</h2>
+            <p>HTML est le langage de balisage utilisé pour structurer les pages web.</p>
         </div>
-        <div class="compte">
-            <h3>PhP</h3>
-          
+
+        <div class="box">
+            <h2>CSS</h2>
+            <p>CSS est utilisé pour styliser et mettre en page les sites web.</p>
+        </div>
+
+        <div class="box">
+            <h2>JavaScript</h2>
+            <p>JavaScript permet d'ajouter de l'interactivité aux sites web.</p>
+        </div>
+
+        <div class="box">
+            <h2>PHP</h2>
+            <p>PHP est un langage serveur utilisé pour créer des applications web dynamiques.</p>
+        </div>
     </div>
-    </section>
-    <!---------------Évaluation des Compétences---------------->
-
-    <script>
-        function setupRating(etoilesId, ratingValueId, rating) {
-            const etoiles = document.querySelectorAll(`#${etoilesId} .etoiles`);
-            const ratingValue = document.getElementById(ratingValueId);
-
-            // Définir la note initiale
-            ratingValue.textContent = rating;
-
-            // Marquer les étoiles comme actives en fonction de la note
-            etoiles.forEach(etoile => {
-                const value = parseInt(etoile.getAttribute('data-value'));
-                if (value <= rating) {
-                    etoile.classList.add('active');
-                }
-            });
-        }
-
-        // Initialisation des évaluations avec les notes prédéfinies
-        setupRating('html-etoiles', 'html-rating-value', 4); // Note 3 pour HTML
-        setupRating('css-etoiles', 'css-rating-value', 3); // Note 4 pour CSS
-        setupRating('python-etoiles', 'python-rating-value', 3); // Note 5 pour Python
-    </script>
-    <script>
-        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-      </script>
-      <script defer src="/_vercel/speed-insights/script.js"></script>
-      <script>
-        function toggleFlip(card) {
-            card.classList.toggle('flipped');
-        }
-    </script>
 </body>
 </html>
