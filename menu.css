@@ -100,7 +100,7 @@ body {
     margin-bottom: 20px;
     font-size: 20px;
     animation: animate 1s ease-in-out forwards;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #edecee, #2575fc);
 }
 
 .content .button {
