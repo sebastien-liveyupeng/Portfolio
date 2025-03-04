@@ -20,23 +20,30 @@ body {
     margin-bottom: 500px;
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    height: 100px;
+}
+
 button {
-    background-color: var(--highlight-color);
-    padding: 10px 20px;
-    color: var(--text-color);
+  background-color: antiquewhite;
     border: none;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    margin-top: 20px;
-    border-radius: 10px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-button a{
-    color: #fff;
+
+box-icon {
+    width: 40px;
+    height: 40px;
 }
-button:hover {
-    background-color: #ff4500;
-}
+
+
+
 
 header {
     text-align: center;
@@ -92,14 +99,13 @@ header {
     font-size: 16px;
 }
 
-a {
-    color: #ff6600;
+a button{
+
     text-decoration: none;
+    background-color: #74b7f5;
 }
 
-a:hover {
-    text-decoration: underline;
-}
+
 @media (max-width: 768px) {
     .button {
         position: relative;
