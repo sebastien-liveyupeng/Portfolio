@@ -184,6 +184,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     transition: all 0.3s ease-in-out;
+
 }
 
 .tool-item:hover span {
@@ -324,7 +325,8 @@ a:hover {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 900px;
+    max-width: 9000px;
+   
 }
 
 /*compétence */
@@ -361,4 +363,24 @@ a:hover {
         flex-direction: column;
         align-items: center;
     }
+}
+.info p{
+    text-align: center;
+    border: 22px;
+    padding: 20px;
+    margin: 0;
+    margin-top: 20px;
+    box-shadow: 0 0 8px rgb(249, 249, 249);
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+
+.information{
+  
+    display: flex;
+    justify-content: center;
+    padding: 50px 8%;
+    background-color: #1a1a1a;
+    text-align: center;
 }
