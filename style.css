@@ -87,19 +87,21 @@ body {
 }
 
 .header_logo a:last-child:hover {
-    background-color: var(--link-hover-color);
-    color: aliceblue;
+    background-color: white;
+    color: rgb(20, 20, 20);
 }
 
 /* 5. Home Section */
+
+
 .home {
     padding: 0 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: calc(100vh - 20px);
+    height: calc(70vh - 20px);
     width: 100%;
-  
+   
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -117,6 +119,9 @@ body {
     height: 100%;
     object-fit: contain;
 }
+
+
+
 
 /* 6. Outils Section */
 .outils {
