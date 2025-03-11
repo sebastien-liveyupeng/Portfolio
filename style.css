@@ -25,7 +25,16 @@ body {
     line-height: 1.6;
 }
 
+.profile-picture {
+    margin-top: 20px;
+}
 
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border-radius: 50px; }
 
 .header_logo {
     display: flex;

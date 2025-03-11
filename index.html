@@ -8,100 +8,9 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>Portfolio</title>
     <style>
-        .etoiles {
-            font-size: 30px;
-            color: rgb(194, 191, 191);
-            cursor: pointer;
-        }
-        .etoiles.active {
-            color: gold;
-        }
-        .container {
-            margin: 20px;
-        }
-        .evaluation-container {
-            margin-bottom: 40px;
-            margin-top: 50px;
-        }
-        .compte {
-            margin-bottom: 10px;
-        }
         
-        .flip-card {
-            width: 300px;
-            height: 200px;
-            perspective: 1200px;
-            cursor: pointer;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-        }
-
-        .flip-card-inner {
-            width: 100%;
-            height: 100%;
-            transition: transform 0.8s cubic-bezier(0.42, 0, 0.58, 1);
-            transform-style: preserve-3d;
-            position: relative;
-            border-radius: 10px;
-        }
-
-        .flip-card-front,
-        .flip-card-back {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            backface-visibility: hidden;
-            border-radius: 10px;
-        }
-
-        .flip-card-front {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #93cafb, #4f7b85);
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .flip-card-front img {
-            max-width: 100%;
-            max-height: 100%;
-            border-radius: 10px;
-        }
-
-        .flip-card-back {
-            background: linear-gradient(135deg, #b7e5f9, #56707d);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transform: rotateY(180deg);
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .flip-card.flipped .flip-card-inner {
-            transform: rotateY(180deg) rotateZ(10deg);
-        }
-
-        .flip-card-back p {
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: scale(0.9);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
+        
+      
     
     </style>
     
@@ -128,6 +37,10 @@
   
     <section class="home">
         <div class="home_left">
+            <div class="profile-picture">
+                <img src="img/fox-black-and-white-illustration-vector.jpg" alt="Photo de Sébastien">
+            </div>
+    
             <h1 class="title">LIVE YU PENG Sébastien</h1>
             <p class="popo">Bienvenue sur mon Portfolio</p>
             <p>
@@ -136,7 +49,8 @@
                 Ce qui me passione dans le web c'est de pouvoir transformer les idées en réalités numérique avec les nouvelles technologies dont nous disposons et qu'y a t'il de mieux qu'un beau site qui fonctionne à merveille et tout bien beau ? Découvrez mes projets dans la section "Projets".
             Vous pourrez voir également mon CV en cliquant ici : <a href="Sébastien.Live-Yu-Peng.CV.pdf" download="Sébastien-LiveYuPeng.pdf" style="text-decoration: none;">Live Yu Peng Sébastien CV</a>
         </p>
-        
+
+      
         </div>
         <div class="flip-card" onclick="toggleFlip(this)">
             <div class="flip-card-inner">
@@ -223,7 +137,7 @@
         </div>
         <div class="box">
             <h2>PhpMyAdmin</h2>
-            <p>PhpMyAdmin permet de la gestion des de donnés MySQL et MariaDB.</p>
+            <p>PhpMyAdmin permet de la gestion des bases de donnés MySQL et MariaDB.</p>
         </div>  <div class="box">
             <h2>Figma</h2>
             <p>figma nous permet d'avoir un visuel du projet avec son maquettage qui permet de transformer les idées en réalités numérique.</p>
