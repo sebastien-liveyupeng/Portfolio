@@ -27,7 +27,7 @@
     <!--------------HEADER-------------------------------->
     <header>
         <ul class="header_logo">
-            <li><a href="projet.html">Projets</a></li>
+            <li> <a href="#" id="openModalBtn">Projets</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="https://github.com/sebastien-liveyupeng">GITHUB</a></li>
             <li><a href="https://www.linkedin.com/in/s%C3%A9bastien-live-yu-peng-62713733b/">Linkedin</a></li>
@@ -163,6 +163,128 @@
              <p class="popo"><box-icon type='solid' name='envelope'></box-icon>Email : sebastien.live-yu-peng@laplateforme.io</p>
         </div>
    </section>
+    <!-------------------------INFORMATIONS------------------------------->
+
+
+     <!-------------------------PROJETS------------------------------->
+
+   <section id="projets" class="mt-20 px-6">
+    <h2 class="text-3xl font-bold text-center text-indigo-500 italic mb-6">Outils utilisés</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="bg-gray-950 p-3 rounded-lg shadow-lg hover:scale-105 hover:bg-gray-700 transition-transform duration-300">
+            <img src="../img/visual-studio-code-logo.png" alt="VS Code" class="w-24 h-24 mx-auto mb-2">
+            <h3 class="text-lg font-semibold text-center">Visual Studio Code</h3>
+        </div>
+
+        <div class="bg-gray-950 p-3 rounded-lg shadow-lg hover:scale-105 hover:bg-gray-700 transition-transform duration-300">
+            <img src="../img/figma.png" alt="Figma" class="w-24 h-24 mx-auto mb-2">
+            <h3 class="text-lg font-semibold text-center">Figma</h3>
+        </div>
+
+        <div class="bg-gray-950 p-3 rounded-lg shadow-lg hover:scale-105 hover:bg-gray-700 transition-transform duration-300">
+            <img src="../img/trello.png" alt="Trello" class="w-24 h-24 mx-auto mb-2">
+            <h3 class="text-lg font-semibold text-center">Trello</h3>
+        </div>
+
+        <div class="bg-gray-950 p-3 rounded-lg shadow-lg hover:scale-105 hover:bg-gray-700 transition-transform duration-300">
+            <img src="../img/phpMyAdmin-Logo-Space.png" alt="PhpMyAdmin" class="w-24 h-24 mx-auto mb-2">
+            <h3 class="text-lg font-semibold text-center">PhpMyAdmin</h3>
+        </div>
+
+        <div class="bg-gray-950 p-3 rounded-lg shadow-lg hover:scale-105 hover:bg-gray-700 transition-transform duration-300">
+            <img src="../img/html.png" alt="HTML" class="w-24 h-24 mx-auto mb-2">
+            <h3 class="text-lg font-semibold text-center">HTML</h3>
+        </div>
+
+        <div class="bg-gray-950 p-3 rounded-lg shadow-lg hover:scale-105 hover:bg-gray-700 transition-transform duration-300">
+            <img src="../img/logo-css-3-2048.png" alt="CSS" class="w-24 h-24 mx-auto mb-2">
+            <h3 class="text-lg font-semibold text-center">CSS</h3>
+        </div>
+
+        <div class="bg-gray-950 p-3 rounded-lg shadow-lg hover:scale-105 hover:bg-gray-700 transition-transform duration-300">
+            <img src="../img/R.png" alt="PHP" class="w-24 h-24 mx-auto mb-2">
+            <h3 class="text-lg font-semibold text-center">PHP</h3>
+        </div>
+
+        <div class="bg-gray-950 p-3 rounded-lg shadow-lg hover:scale-105 hover:bg-gray-700 transition-transform duration-300">
+            <img src="../img/javascript.png" alt="JavaScript" class="w-24 h-24 mx-auto mb-2">
+            <h3 class="text-lg font-semibold text-center">JavaScript</h3>
+        </div>
+        <div class="bg-gray-950 p-3 rounded-lg shadow-lg hover:scale-105 hover:bg-gray-700 transition-transform duration-300">
+            <img src="../img/OIP.jpg" alt="JavaScript" class="w-24 h-24 mx-auto mb-2">
+            <h3 class="text-lg font-semibold text-center">Bootsrap</h3>
+        </div>
+        <div class="bg-gray-950 p-3 rounded-lg shadow-lg hover:scale-105 hover:bg-gray-700 transition-transform duration-300">
+            <img src="../img/Tailwind_CSS_Logo.svg.png" alt="JavaScript" class="w-24 h-24 mx-auto mb-2">
+            <h3 class="text-lg font-semibold text-center">Tailwindcss</h3>
+        </div>
+    </div>
+</section>
+
+
+ <!-- MODAL projet -->
+ <div id="modalProjets" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+    <div class="bg-gray-900 p-6 rounded-lg w-3/4 md:w-1/2 lg:w-1/3 shadow-lg text-white relative">
+        <button id="closeModalBtn" class="absolute top-2 right-2 text-gray-400 hover:text-white text-2xl">&times;</button>
+        <h2 class="text-2xl font-bold text-center mb-4 italic">Projets</h2>
+       
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="bg-gray-800 p-4 rounded-lg shadow">
+                <h3 class="font-semibold ">Livre OR</h3>
+                <img src="../img/livre-or.png" alt="">
+                <p class="text-sm text-gray-400">Un site Livre OR , ayant intégré le CRUD , nous avons utilisé HTML/CSS pour styliser et Php ainsi que PhpMyAdmin pour la gestion de la base de donnée car chaque utilisateur devait se connecter donc s'inscrire pour commenter modifier et supprimer ses commentaires .</p>
+                <a href="https://github.com/esteban-genty/livre-or" class="hover:text-cyan-400 hover:shadow-lg hover:scale-110 transition-all">GitHub</a>
+              
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow">
+                <h3 class="font-semibold">Gestionnaire de Menu</h3>
+                <img src="../img/Gestionnairedemenu.png" alt="pro">
+                <p class="text-sm text-gray-400"> Un site réalisé en HTML/CSS et PHP , l'utilisateur peut ajouter ses différents types de plats les supprimer et modifier.</p>
+                <a href="https://github.com/esteban-genty/gestionnaire-de-menu" class="hover:text-cyan-400 hover:shadow-lg hover:scale-110 transition-all">GitHub</a>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded-lg shadow">
+                <h3 class="font-semibold">QuizNight </h3>
+                <img src="../img/quiznight.png" alt="pro">
+                <p class="text-sm text-gray-400"> Parti sur la même base que le projet "Livre OR", nous avons utilisé les même outils afin de finir ce projet qui consciste a pouvoir créeer et gérer ses propres quizz tout en pouvant les modifiés à tout moments .</p>
+                <a href="https://github.com/esteban-genty/quiznight" class="hover:text-cyan-400 hover:shadow-lg hover:scale-110 transition-all">GitHub</a>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded-lg shadow">
+                <h3 class="font-semibold">HappyMeal </h3>
+                <img src="../img/Capture d'écran 2025-03-31 101438.png" alt="pro">
+                <p class="text-sm text-gray-400">C'est un projet qui permet de voir différents recettes et d'ajouter des ingrédietns à une liste et ensuite télécharger cette liste en pdf pour cela mon groupe on a utilisé un fichier json pour afficher recettes et aussi LocalStorage pour la liste de course . TailwindCss pour le front et couplé avec du Css </p>
+                <a href="https://github.com/esteban-genty/happyMeal/tree/dev" class="hover:text-cyan-400 hover:shadow-lg hover:scale-110 transition-all">GitHub</a>
+            </div>
+          
+        </div>
+    </div>
+    
+</div>
+
+<!--  -->
+<script>
+    document.getElementById("openModalBtn").addEventListener("click", function(event) {
+        event.preventDefault();
+        document.getElementById("modalProjets").classList.remove("hidden");
+    });
+
+    document.getElementById("closeModalBtn").addEventListener("click", function() {
+        document.getElementById("modalProjets").classList.add("hidden");
+    });
+
+    // Fermer 
+    document.getElementById("modalProjets").addEventListener("click", function(event) {
+        if (event.target === this) {
+            this.classList.add("hidden");
+        }
+    });
+</script>
+  <!-------------------------PROJETS------------------------------->
+
+
 
    <!------------------------footer-------------------------------->
    <footer>

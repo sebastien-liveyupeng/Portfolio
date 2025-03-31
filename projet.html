@@ -3,91 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="projet.css">
-    <link rel="stylesheet" href="menu.css">
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
-    <script src="https://kit.fontawesome.com/TON_ID.js" crossorigin="anonymous"></script>
-    <title>Projets</title>
+    <title>Portfolio - Projets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
-<body>
-    <button><a href="index.html" class="bubu">Retour</a></button>
-    
-    <header>
-        <h1 class="header_logo">LISTE DES PROJETS</h1>
-    </header>
 
-    <div class="container">
+<script>
+    document.getElementById("openModalBtn").addEventListener("click", function(event) {
+        event.preventDefault();
+        document.getElementById("modalProjets").classList.remove("hidden");
+    });
 
+    document.getElementById("closeModalBtn").addEventListener("click", function() {
+        document.getElementById("modalProjets").classList.add("hidden");
+    });
 
-
-        <div class="slide">
-
-            <div class="item" style="background-image: url(img/imaginedragon.png);">
-                <div class="content">
-                    <div class="name"> Imagin Dragons</div>
-                    <div class="des">Ce projet se porte sur le groupe de musique Imagine Dragons, contenant les différents onglets suivants : "biographie", "réseaux", "contact" et etc. Ce fan site est fait en HTML et CSS dont vous pourrez voir le code source sur mon Github </div>
-                    <button ><a href="https://github.com/sebastien-liveyupeng/fansite" ></a>Source code</a></button>      
-                </div>
-            </div>
-            <div class="item" style="background-image: url(img/macha.png);">
-                <div class="content">
-                    <div class="name" style="color: rgb(255, 255, 255);">Macha Tea</div>
-                    <div class="des">Un site pour la vente de Thé Matcha. Vous pourrez aussi voir le code source sur Github</div>
-                    <button ><a href="https://github.com/sebastien-liveyupeng/fansite" ></a>Source code</a></button>           
-                </div>
-            </div>
-            <div class="item" style="background-image: url(img/TICTAC.png);">
-                <div class="content">
-                    <div class="name">Tic Tac Toe</div>
-                    <div class="des">Ce projet consiste à créer le jeu TIC TAC TOE. J'ai utilisé Python, HTML/CSS pour ce projet. Vous pourrez aussi voir le code source sur mon Github</div>
-                    <button><a href="https://github.com/sebastien-liveyupeng/fansite" ></a>Source code</a></button>      
-                </div>
-            </div>
-            <div class="item" style="background-image: url(img/Bloom.png);">
-                <div class="content">
-                    <div class="name">Bloom Petals</div>
-                    <div class="des">Ce site se tient sur une compagnie de design floral, avec divers onglets tels que "contact", "les membres de l'équipe" et etc.</div>
-                    <button ><a href="https://github.com/sebastien-liveyupeng/bloom-petals" ></a>Source code</a></button>         
-                </div>
-            </div>
-            <div class="item" style="background-image: url(img/quiznight.png);">
-                <div class="content">
-                    <div class="name">Quiz Night</div>
-                    <div class="des">C'est site , dans lequel l'utilisateur peut créer des catégories de Quiz donc le CRUD , réalisé en HtML/CSS et PHP  </div>
-                    <button ><a href="https://github.com/esteban-genty/quiznight" ></a>Source code</a></button>          
-                </div>
-            </div>
-            <div class="item" style="background-image: url(img/Gestionnairedemenu.png);">
-                <div class="content">
-                    <div class="name">Gestionnaire de menu</div>
-                    <div class="des"> Un site réalisé en HTML/CSS et PHP , l'utilisateur peut ajouter ses différents types de plats les supprimer et modifier</div>
-                    <button ><a href="https://github.com/esteban-genty/gestionnaire-de-menu" style="text-decoration: none;color: white;">Source code</a></button>        
-                </div>
-            </div>
-            <div class="item" style="background-image: url(img/livre-or.png);">
-                <div class="content">
-                    <div class="name" style="color: rgb(255, 255, 255);">Livre d'or</div>
-                    <div class="des"> Un site réalisé en HTML/CSS et PHP , l'utilisateur peut commenter mais seulement s'il est connecté et aussi modifier ses infos .</div>
-                    <button ><a href=""></a>Source code</a></button>        
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="button">
-            <button class="prev"><box-icon name="left-arrow-alt"></box-icon></button>
-            <button class="next"><box-icon name="right-arrow-alt"></box-icon></button>
-        </div>
-        
-
- 
-    </div>
-
-
-    <script src="menu.js"></script>
-    </section>
+  
+    document.getElementById("modalProjets").addEventListener("click", function(event) {
+        if (event.target === this) {
+            this.classList.add("hidden");
+        }
+    });
+</script>
 </body>
 </html>
