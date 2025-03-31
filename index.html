@@ -17,7 +17,17 @@
     height: 100vh;
 }
 
-    
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+#modalProjets {
+    overflow-y: auto;
+    max-height: 90vh; 
+}
+
     </style>
     
       
@@ -199,7 +209,7 @@ document.getElementById("closeModalBtn").addEventListener("click", function() {
 document.getElementById("modalProjets").addEventListener("click", function(event) {
     if (event.target === this) {
         this.classList.add("hidden");
-        document.body.classList.remove("no-scroll"); // Réactive le scroll
+        document.body.classList.remove("no-scroll"); 
     }
 });
 
