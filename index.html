@@ -12,7 +12,11 @@
     <style>
         
         
-      
+        .no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
     
     </style>
     
@@ -180,21 +184,25 @@
 
 <!--  -->
 <script>
-    document.getElementById("openModalBtn").addEventListener("click", function(event) {
-        event.preventDefault();
-        document.getElementById("modalProjets").classList.remove("hidden");
-    });
+document.getElementById("openModalBtn").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("modalProjets").classList.remove("hidden");
+    document.body.classList.add("no-scroll"); 
+});
 
-    document.getElementById("closeModalBtn").addEventListener("click", function() {
-        document.getElementById("modalProjets").classList.add("hidden");
-    });
+document.getElementById("closeModalBtn").addEventListener("click", function() {
+    document.getElementById("modalProjets").classList.add("hidden");
+    document.body.classList.remove("no-scroll"); 
+});
 
-    // Fermer 
-    document.getElementById("modalProjets").addEventListener("click", function(event) {
-        if (event.target === this) {
-            this.classList.add("hidden");
-        }
-    });
+
+document.getElementById("modalProjets").addEventListener("click", function(event) {
+    if (event.target === this) {
+        this.classList.add("hidden");
+        document.body.classList.remove("no-scroll"); // Réactive le scroll
+    }
+});
+
 </script>
   <!-------------------------PROJETS------------------------------->
 
