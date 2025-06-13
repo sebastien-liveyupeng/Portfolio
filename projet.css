@@ -7,18 +7,7 @@
     --spacing: 15px;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin-bottom: 500px;
-}
+
 
 .button {
     display: flex;
